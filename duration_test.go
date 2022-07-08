@@ -54,6 +54,10 @@ func TestString(t *testing.T) {
 	// test week format
 	d = Duration{Weeks: 1}
 	assert.Equal(t, d.String(), "P1W")
+	
+	// test second format
+	d = Duration{Seconds: 1}
+	assert.Equal(t, d.String(), "PT1S")
 }
 
 func TestToDuration(t *testing.T) {
